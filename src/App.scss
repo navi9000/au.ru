@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.App {
+  background-color: #cccccc;
+  min-height: 100vh;
+}
+
+@import 'scss/container';
+@import 'scss/header';
+@import 'scss/form';
+@import 'scss/input';
+@import 'scss/hr';

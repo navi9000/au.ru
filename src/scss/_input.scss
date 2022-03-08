@@ -1,0 +1,68 @@
+.input {
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        width: 224px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 21px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    &__entry {
+        width: 336px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin: 0 18px 0 9px;
+        border: 1px solid #999999;
+        box-sizing: border-box;
+        padding: 6px 12px;
+        height: 31px;
+        &_checkbox {
+            width: 12px;
+            height: 12px;
+        }
+        &_select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: url('../img/arrow.svg');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 12px) center;
+            cursor: pointer;
+        }
+        &_error {
+            border-color: #FF0000;
+        }
+    }
+
+    &__comment {
+        flex-basis: 1;
+        text-align: start;
+        font-size: 12px;
+        line-height: 20px;
+        color: #999999;
+        &_checkbox {
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+
+    &__error {
+        display: none;
+        position: absolute;
+        color: #FF0000;
+        font-size: 12px;
+        line-height: 20px;
+        left: 233px;
+        top: 36px;
+        &_visible {
+            display: block;
+        }
+    }
+}
